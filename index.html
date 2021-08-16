@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!--fuente p-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+
+<!--fuente h-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+
+
+<!--fuente menu-->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+
+
+    <title>Ñoñis</title>
+
+    <style>
+        body{
+            background:url(./Assets/Imagenes/bg_5_edit2.jpg);
+            background-size: 100%, auto;
+    
+        }
+
+        .redes{
+          display:flex;
+          justify-content:center;
+          gap: 20px;
+        }
+
+        .texto {
+          /*font-family: 'Indie Flower', cursive;*/
+          font-family: 'Handlee', cursive;
+          font-size: larger;
+        }
+
+        .Subtitulo {
+          font-family: 'Abril Fatface', cursive;
+
+        }
+
+        .Barra {
+          font-family: 'Amatic SC', cursive;
+          font-size: 25pt;
+
+        }
+
+        .card-title{
+          font-family: 'Amatic SC', cursive;
+          font-size: 25px;
+
+        }
+
+        .card-text{
+          font-family: 'Handlee', cursive;
+        }
+
+        .imagen:hover {
+          filter:opacity(0.7);
+  
+    
+        }
+
+        .imagen:hover {
+          transform:rotate(25deg);
+        }
+
+        img.cerdo {
+          border-radius: 20px;
+        }
+
+
+
+
+
+
+
+    </style>
+
+    <!--Barra de Navegacion-->
+    <div class="Barra">
+    <nav class="navbar navbar-expand-lg navbar-light background-color ">
+        <div class="container-fluid">
+          <img src="../BootstrapÑoñis/Assets/Imagenes/ÑoñisLogoTemporal_Grande.png" alt="Ñoñis" width="100px">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Ñoñitos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Colores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Carrito</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+</head>
+
+
+<body>
+    
+    <!--Carrusel
+
+    <div id=Carrusel>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./Assets/Imagenes/Ñoñis_Abejitas.jpeg" class="img-fluid" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./Assets/Imagenes/Ñoñis_Cactus.jpeg" class="img-fluid" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./Assets/Imagenes/Ñoñis_Cerdicornio.jpeg" class="img-fluid" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./Assets/Imagenes/Ñoñis_Corazon.jpeg" class="img-fluid" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./Assets/Imagenes/Ñoñis_Cupcake.jpeg" class="img-fluid" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./Assets/Imagenes/Ñoñis_Flor.jpeg" class="img-fluid" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>  
+-->
+
+
+
+    <!--imagen central-->
+
+    <div class="container">
+    <div class="row justify-content-center p-1">
+        
+        <div class="col-6 text-center">
+            <h2 class="Subtitulo">¿Amigurumis?</h2>
+            <br>
+            <p class="texto">Según la creencia japonesa, cada amigurumi posee un alma, 
+                nos acompaña y se transforma en nuetro amiguito, proporcionándonos protección
+                y consuelo cuando nos sentimos tristes y confundidos.
+            </p>
+            <br>
+            <br>
+            <p class="texto">El amigurumi es en Japón algo más que un simple pasatiempo, ya que forma parte 
+                de la Cultura Kawaii, término que podría traducirse como tierno, adorable...
+            </p>
+            <br>
+            <br>
+            <p class="texto">Es por ello que los amigurumis se convierten en un tierno regalo para alguien
+                especial o para uno mismo, principalmente para bebés y niños.
+            </p>
+            <!--<p><img src="./Assets/Imagenes/Ñoñis_Poster.jpg" class="img-fluid" alt=""></p>-->
+        </div>
+        <div class="col-6 text-center">
+            <h4 class="Subtitulo">Amigurimi del Mes: Cerdicornio</h4>
+            <br>
+            <div class="cerdo">
+            <p><img src="./Assets/Imagenes/Cerdicornio_grande_recorte.jpeg"  class="img-fluid" alt=""></p>
+          </div>
+        </div>
+        
+    </div>
+</div>
+
+
+
+<!--Muestras-->
+<div class="Muestras">
+
+<div class="row py-5 text-center">
+
+  <h3 class="Subtitulo">Nuestros Colores:</h3>
+
+  <div class="col-3"> <!--tarjeta 2-->
+    <div class="card" style="width: 18rem;">
+      <img src="./Assets/Imagenes/E_Aqua.jpeg.jpeg" class="card-img-top img-fluid" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Aqua</h5>
+        <p class="card-text">100% algodón.</p>
+      </div>
+    </div>
+  </div> <!--fin de tarjta1-->
+  <div class="col-3"> <!--tarjeta 3-->
+    <div class="card" style="width: 18rem;">
+      <img src="./Assets/Imagenes/E_Cafe.jpeg.jpeg" class="card-img-top img-fluid" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Café</h5>
+        <p class="card-text">100% algodón.</p>
+      </div>
+    </div>
+  </div> <!--fin de tarjta1-->
+  <div class="col-3"> <!--tarjeta 4-->
+    <div class="card" style="width: 18rem;">
+      <img src="./Assets/Imagenes/E_Morado.jpeg.jpeg" class="card-img-top img-fluid" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Morado</h5>
+        <p class="card-text">100% algodón.</p>
+      </div>
+    </div>
+  </div> <!--fin de tarjta1-->
+  <div class="col-3"> <!--tarjeta 1-->
+    <div class="card" style="width: 18rem;">
+      <img src="./Assets/Imagenes/E_RosaPalo.jpeg.jpeg" class="card-img-top img-fluid" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Palo de Rosa</h5>
+        <p class="card-text">100% algodón.</p>
+      </div>
+    </div>
+  </div> <!--fin de tarjta1-->
+</div>
+
+<div class="row text-center ">
+  <div class="col-3"> <!--tarjeta 1-->
+    <div class="card" style="width: 18rem;">
+      <img src="./Assets/Imagenes/E_Calabaza.jpeg.jpeg" class="card-img-top img-fluid" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Calabaza</h5>
+        <p class="card-text">100% algodón.</p>
+      </div>
+    </div>
+  </div> <!--fin de tarjta1-->
+  <div class="col-3"> <!--tarjeta 1-->
+    <div class="card" style="width: 18rem;">
+      <img src="./Assets/Imagenes/E_Carmin.jpeg.jpeg" class="card-img-top img-fluid" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Carmín</h5>
+        <p class="card-text">100% algodón.</p>
+      </div>
+    </div>
+  </div> <!--fin de tarjta1-->
+  <div class="col-3"> <!--tarjeta 1-->
+    <div class="card" style="width: 18rem;">
+      <img src="./Assets/Imagenes/E_RosaNiña.jpeg.jpeg" class="card-img-top img-fluid" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Rosa Niña</h5>
+        <p class="card-text">100% algodón.</p>
+      </div>
+    </div>
+  </div> <!--fin de tarjta1-->
+  <div class="col-3"> <!--tarjeta 1-->
+    <div class="card" style="width: 18rem;">
+      <img src="./Assets/Imagenes/E_VLimon.jpeg.jpeg" class="card-img-top img-fluid" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Verde Limón</h5>
+        <p class="card-text">100% algodón.</p>
+      </div>
+    </div>
+  </div> <!--fin de tarjta1-->
+</div>
+
+</div>
+
+
+
+<footer class="text-center py-5">
+  <h4>Encuentranos en:</h4>
+  <div class="redes">
+    <p><a href="https://www.facebook.com/noniscrochetlandia"><img class="imagen" src="./Assets/Imagenes/Incono_FB.png" width="50px" alt=""></a></p>
+    <p><a href="https://www.instagram.com/nonis_crochet/"><img class="imagen" src="./Assets/Imagenes/Icono_Insta.png" width="50px" alt=""></a></p>
+
+  </div>
+
+</footer>
+
+</body>
+
+</html>
