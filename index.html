@@ -53,12 +53,12 @@
           font-size: larger;
         }
 
-        .Subtitulo {
+        .subtitulo {
           font-family: 'Abril Fatface', cursive;
 
         }
 
-        .Barra {
+        .barra {
           font-family: 'Amatic SC', cursive;
           font-size: 25pt;
 
@@ -74,17 +74,19 @@
           font-family: 'Handlee', cursive;
         }
 
+        .text-iconos{
+          font-family: 'Amatic SC', cursive;
+          font-size: 30px;
+        }
+
         .imagen:hover {
           filter:opacity(0.7);
+          transform:rotate(25deg);
   
     
         }
 
-        .imagen:hover {
-          transform:rotate(25deg);
-        }
-
-        img.cerdo {
+        .cerdo {
           border-radius: 20px;
         }
 
@@ -97,10 +99,10 @@
     </style>
 
     <!--Barra de Navegacion-->
-    <div class="Barra">
+    <div class="barra">
     <nav class="navbar navbar-expand-lg navbar-light background-color ">
         <div class="container-fluid">
-          <img src="../BootstrapÑoñis/Assets/Imagenes/ÑoñisLogoTemporal_Grande.png" alt="Ñoñis" width="100px">
+          <img src="./Assets/Imagenes/ÑoñisLogoTemporal_Grande.png" alt="Ñoñis" width="100px">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -172,10 +174,10 @@
     <div class="row justify-content-center p-1">
         
         <div class="col-6 text-center">
-            <h2 class="Subtitulo">¿Amigurumis?</h2>
+            <h2 class="subtitulo">¿Amigurumis?</h2>
             <br>
             <p class="texto">Según la creencia japonesa, cada amigurumi posee un alma, 
-                nos acompaña y se transforma en nuetro amiguito, proporcionándonos protección
+                nos acompaña y se transforma en nuestro amiguito, proporcionándonos protección
                 y consuelo cuando nos sentimos tristes y confundidos.
             </p>
             <br>
@@ -191,7 +193,7 @@
             <!--<p><img src="./Assets/Imagenes/Ñoñis_Poster.jpg" class="img-fluid" alt=""></p>-->
         </div>
         <div class="col-6 text-center">
-            <h4 class="Subtitulo">Amigurimi del Mes: Cerdicornio</h4>
+            <h4 class="subtitulo">Amigurimi del Mes: Cerdicornio</h4>
             <br>
             <div class="cerdo">
             <p><img src="./Assets/Imagenes/Cerdicornio_grande_recorte.jpeg"  class="img-fluid" alt=""></p>
@@ -204,11 +206,11 @@
 
 
 <!--Muestras-->
-<div class="Muestras">
+<div class="muestras">
 
 <div class="row py-5 text-center">
 
-  <h3 class="Subtitulo">Nuestros Colores:</h3>
+  <h3 class="subtitulo">Nuestros Colores:</h3>
 
   <div class="col-3"> <!--tarjeta 2-->
     <div class="card" style="width: 18rem;">
@@ -292,7 +294,7 @@
 
 
 <footer class="text-center py-5">
-  <h4>Encuentranos en:</h4>
+  <h4 class="text-iconos">Encuentranos en:</h4>
   <div class="redes">
     <p><a href="https://www.facebook.com/noniscrochetlandia"><img class="imagen" src="./Assets/Imagenes/Incono_FB.png" width="50px" alt=""></a></p>
     <p><a href="https://www.instagram.com/nonis_crochet/"><img class="imagen" src="./Assets/Imagenes/Icono_Insta.png" width="50px" alt=""></a></p>
